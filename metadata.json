@@ -1,0 +1,5 @@
+{
+  "name": "liftupbyhedera",
+  "description": "A decentralized crowdfunding platform built on React and the Hedera Testnet. Users can create projects, issue tokens, and invest in ideas they believe in, with all transactions recorded on the Hedera public ledger.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LiftUP | Hedera CrowdFund</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'poppins': ['Poppins', 'sans-serif'],
+              'nunito': ['Nunito', 'sans-serif'],
+            },
+            colors: {
+              'navy-900': '#0A192F',
+              'navy-800': '#172A45',
+              'navy-700': '#304A6D',
+              'teal-500': '#64FFDA',
+              'slate-400': '#8892B0',
+              'slate-200': '#CCD6F6',
+              'lift-navy': '#1C1C28',
+              'lift-orange': '#FF7A5A',
+              'lift-pink': '#FF4B8A',
+              'lift-violet': '#9B6EF3',
+              'lift-mint': '#A3F7BF',
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Hedera Polyfills -->
+    <script>var global = window;</script>
+    <script src="https://unpkg.com/buffer/"></script>
+
+    <!-- Import Map -->
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "firebase/": "https://aistudiocdn.com/firebase@^12.5.0/",
+        "@hashgraph/sdk": "https://aistudiocdn.com/@hashgraph/sdk@^2.76.0",
+        "chart.js": "https://aistudiocdn.com/chart.js@^4.4.3",
+        "react-chartjs-2": "https://aistudiocdn.com/react-chartjs-2@^5.2.0",
+        "@google/genai": "https://aistudiocdn.com/@google/genai@^0.17.0",
+        "react-router-dom": "https://aistudiocdn.com/react-router-dom@^6.25.1"
+      }
+    }
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+
+  <body class="bg-lift-navy text-slate-200 font-nunito">
+    <div id="root"></div>
+
+    <!-- Main Scripts -->
+    <script type="module" src="/index.tsx"></script>
+    <!-- Optional JS fallback if you have index.js -->
+    <!-- <script type="module" src="/index.js"></script> -->
+  </body>
+</html>
