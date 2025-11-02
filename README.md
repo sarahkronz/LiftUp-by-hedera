@@ -125,7 +125,7 @@ This project was developed with clean, maintainable, and scalable code in mind.
 -   **Component-Based UI:** The user interface is built entirely with React, promoting reusability and a declarative programming style.
 
 ---
-
+⚠️ Important Note: If you encounter an error during signup (e.g., auth/weak-password), please check the browser console for details. Always ensure your password meets the 6-character minimum.
 ## 📜 License
 
 This project is licensed under the MIT License.
